@@ -95,6 +95,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0476E79A24EEE70600390191 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0476E79924EEE70600390191 /* CoreTelephony.framework */; };
 		173641DE1ECBBABC00512239 /* AWSLambdaRequestRetryHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 173641DC1ECBBABC00512239 /* AWSLambdaRequestRetryHandler.h */; };
 		173641DF1ECBBABC00512239 /* AWSLambdaRequestRetryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 173641DD1ECBBABC00512239 /* AWSLambdaRequestRetryHandler.m */; };
 		174A59F01D89D7DB008C7D52 /* AWSLambdaMicroserviceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A59EF1D89D7DB008C7D52 /* AWSLambdaMicroserviceClient.m */; };
@@ -1168,7 +1169,6 @@
 		EFDE85FE1FC6535E00D281A2 /* AWSCognitoIdentityProviderASF.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDE85FD1FC6535E00D281A2 /* AWSCognitoIdentityProviderASF.m */; };
 		EFDE86021ED20517008841EC /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB8EF551C6A6A2E0098B15B /* libOCMock.a */; };
 		EFDE86021FC6591900D281A2 /* AWSCognitoIdentityASF.h in Headers */ = {isa = PBXBuildFile; fileRef = EFDE86001FC6591900D281A2 /* AWSCognitoIdentityASF.h */; };
-		EFDE86031FC6591900D281A2 /* libAWSCognitoIdentityProviderASFBinary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDE86011FC6591900D281A2 /* libAWSCognitoIdentityProviderASFBinary.a */; };
 		EFDE86041FC65A0600D281A2 /* AWSCognitoIdentityProviderASF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDE85E11FC5DD3D00D281A2 /* AWSCognitoIdentityProviderASF.framework */; };
 		EFDE86091FC65A9A00D281A2 /* AWSCognitoIdentityProviderASF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDE85E11FC5DD3D00D281A2 /* AWSCognitoIdentityProviderASF.framework */; };
 		EFDF14D71C993015002CCFE2 /* AWSCognitoIdentityUser.h in Headers */ = {isa = PBXBuildFile; fileRef = EFDF14BF1C9929AE002CCFE2 /* AWSCognitoIdentityUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -3186,6 +3186,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0476E79924EEE70600390191 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		173641DC1ECBBABC00512239 /* AWSLambdaRequestRetryHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSLambdaRequestRetryHandler.h; sourceTree = "<group>"; };
 		173641DD1ECBBABC00512239 /* AWSLambdaRequestRetryHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSLambdaRequestRetryHandler.m; sourceTree = "<group>"; };
 		174A59EE1D89D7DB008C7D52 /* AWSLambdaMicroserviceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSLambdaMicroserviceClient.h; sourceTree = "<group>"; };
@@ -4316,7 +4317,6 @@
 		EFDE85F61ED2050C008841EC /* AWSCognitoAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AWSCognitoAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDE85FD1FC6535E00D281A2 /* AWSCognitoIdentityProviderASF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSCognitoIdentityProviderASF.m; sourceTree = "<group>"; };
 		EFDE86001FC6591900D281A2 /* AWSCognitoIdentityASF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSCognitoIdentityASF.h; sourceTree = "<group>"; };
-		EFDE86011FC6591900D281A2 /* libAWSCognitoIdentityProviderASFBinary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAWSCognitoIdentityProviderASFBinary.a; sourceTree = "<group>"; };
 		EFDE860A1ED20517008841EC /* AWSCognitoAuthUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AWSCognitoAuthUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDF14761C986D7E002CCFE2 /* AWSCognitoIdentityUserPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSCognitoIdentityUserPool.m; sourceTree = "<group>"; };
 		EFDF147A1C98A79C002CCFE2 /* AWSCognitoIdentityUserPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSCognitoIdentityUserPool.h; sourceTree = "<group>"; };
@@ -5322,7 +5322,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFDE86031FC6591900D281A2 /* libAWSCognitoIdentityProviderASFBinary.a in Frameworks */,
+				0476E79A24EEE70600390191 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5526,6 +5526,7 @@
 		17E6B467209BB99A0079B286 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0476E79924EEE70600390191 /* CoreTelephony.framework */,
 				B5A0263622F025E0001C75CE /* libOCMock.a */,
 				B5DD455D22CA6AC9003871AE /* libOCMock.a */,
 			);
@@ -7787,7 +7788,6 @@
 			children = (
 				EFDE86001FC6591900D281A2 /* AWSCognitoIdentityASF.h */,
 				FA5DFE5721FB8E4700C554E7 /* AWSCognitoIdentityASF.m */,
-				EFDE86011FC6591900D281A2 /* libAWSCognitoIdentityProviderASFBinary.a */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
