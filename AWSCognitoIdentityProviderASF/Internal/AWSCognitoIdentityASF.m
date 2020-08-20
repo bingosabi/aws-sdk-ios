@@ -1,6 +1,10 @@
 #import "AWSCognitoIdentityASF.h"
 #import <UIKit/UIKit.h>
+
+#if TARGET_OS_IOS && !TARGET_OS_MACCATALYST
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#endif
+
 #import <CoreTelephony/CTCarrier.h>
 #import <sys/utsname.h>
 #import <CommonCrypto/CommonHMAC.h>
@@ -59,8 +63,8 @@ static NSString *const AWSCognitoIdentityASFVersion= @"IOS20171114";
     NSString *minuteOffset = [localTimeZoneOffset substringFromIndex:[localTimeZoneOffset length] - 2];
     NSString *timezoneOffset = [NSString stringWithFormat:@"%@:%@",hourOffset,minuteOffset];
     NSString * locale = [[NSLocale preferredLanguages] objectAtIndex:0];
-    CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
     #if TARGET_OS_IOS && !TARGET_OS_MACCATALYST
+    CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
     NSString * networkType = [networkInfo currentRadioAccessTechnology];
     CTCarrier *cellularProvider = [networkInfo subscriberCellularProvider];
     NSString *countryCode = cellularProvider.isoCountryCode;
